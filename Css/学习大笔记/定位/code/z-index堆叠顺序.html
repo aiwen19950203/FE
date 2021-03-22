@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            /* position: absolute; */
+            /* position: relative; */
+            /* position: fixed; */
+
+            /* 现在绝对定位的元素都脱标了，所以如果不设置层级的话 会有 `后来者居上`的效果 */
+            /* 通过设置 z-index 的属性可以实现元素层叠顺序的调整 */
+        }
+        .red {
+            background-color: #f00;
+            z-index: 1;
+        }
+        .green {
+            background-color: #0f0;
+        }
+        .blue {
+            background-color: #00f;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="red">
+
+    </div>
+    <div class="green"> 
+
+    </div>
+    <div class="blue">
+
+    </div>
+</body>
+
+</html>

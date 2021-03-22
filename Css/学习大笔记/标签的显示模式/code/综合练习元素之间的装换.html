@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        1. 写 三个 div  给定 100 * 100 的红色盒子     --  宽度 高度  背景色 
+        2. 三个 span   也要求  150 * 150 绿色盒子 
+        3. 三个  a 链接   80 * 20  蓝色 盒子  要求 必须一行显示 这三个盒子
+        4. 鼠标经过3个a链接的时候， 背景颜色变为  橙色   
+         */
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+
+
+        }
+        span {
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            background-color: green;
+
+        }
+
+        a {
+            width: 80px;
+            height: 20px;
+            display: inline-block;
+            background-color: blue;
+
+        }
+        a:hover {
+            background-color: orange;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+
+    </div>
+    <div class="box">
+
+    </div>
+    <div class="box">
+
+    </div>
+    <span></span><span></span><span></span>
+
+    <a href=""></a>
+    <a href=""></a>
+    <a href=""></a>
+</body>
+
+</html>

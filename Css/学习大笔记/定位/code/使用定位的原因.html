@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            width: 200px;
+            height: 200px;
+            background-color: #f00;
+            /* text-align: center; */
+            /* overflow: hidden; */
+            position: relative;
+        }
+        .son {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            background-color: #0f0;
+            /* float: left; */
+            /* margin-top: 50px; */
+            position: absolute;
+            /* top:center */
+            /* top:25% */
+        }
+        /* 从上面的例子中不难发现 现在还是 标准标准流实现一个盒子 */
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+</html>

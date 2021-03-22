@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            position: relative;
+            width: 310px;
+            height: 190px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin: 100px auto;
+
+        }
+
+        .top,
+        .bottom {
+            position: absolute;
+        }
+
+        .top {
+            top: 0;
+            left: 0;
+        }
+
+        .bottom {
+            bottom: 0;
+            right: -1px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <!-- 最外层是水平居中的盒子 两个要素 有宽度 margin auto -->
+        <!-- 三张图片 小图片用的是 absolute  父盒子使用的是relative   -->
+        <img src="./images/adv.jpg" alt="">
+        <img src="./images/top_tu.gif" alt="" class="top">
+        <img src="./images/br.gif" alt="" class="bottom">
+    </div>
+</body>
+
+</html>

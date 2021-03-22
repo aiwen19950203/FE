@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            /* 不能设置高度 */
+            width: 800px;
+            background-color: #ccc;
+            margin-top: 200px;
+            /* 设置了 hidden 虽然 footer 盒子在 father 盒子的下面 但是盒子向上移动的部分被隐藏了 */
+            /* bcg 二代配网 怎么配网的   */
+            /* overflow: hidden; */
+        }
+        .red,.green {
+            width: 100px;
+            height: 300px;
+            float: left;
+        }
+        .red {
+            background-color: red;
+            /* margin 负值 表示从当前位置向上移动 50px  */
+            margin-top: -50px;
+        }
+        .green {
+            background-color: green;
+        }
+        .footer {
+            width: 1000px;
+            height: 200px;
+            background-color: blue;
+        }
+
+        /* after 伪元素清除浮动 在需要清除浮动的元素上添加 clearfix 类名 其实叫什么名称无所谓这只是约定俗成的叫法而已*/
+        .clearfix:after {
+            /* 伪元素的内容 这默认是个行内元素 */
+            content: '';
+            display: block;
+            height: 0;
+            visibility: hidden;
+            clear: both;
+        }
+        .clearfix {
+            *zoom: 1;
+        }
+
+        
+
+
+        
+    </style>
+
+</head>
+
+<body>
+
+<div class="box1">
+    <!-- 为了演示 overflow hidden 导致 溢出的部分隐藏了 -->
+    <div class="father clearfix">
+        <div class="red">来点字,老好看啦,我老稀罕你啦,哎呀,看不见你,吃不下饭,</div>
+		<div class="green"></div>
+    </div>
+    <div class="footer"></div>
+
+
+</body>
+
+</html>

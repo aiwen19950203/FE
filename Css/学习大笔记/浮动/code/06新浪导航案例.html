@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 去除浏览器的默认样式 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+            /* 让左右侧的导航栏全部浮动 */
+            float: left;
+            /* 尽量将文字的大小 设置到 a 标签的 父元素上面 不要 在 a 标签上直接设置文字大小 */
+            font-size: 12px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* 页面样式 */
+        /* 最外层 nav */
+        .nav {
+            height: 40px;
+            background-color: #ccc;
+            border-top: 3px solid orange;
+            border-bottom: 1px solid #999;
+        }
+
+        /* 通栏----导航栏文字的开始到结束 */
+        .wrap {
+            width: 1000px;
+            margin: 0 auto;
+
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+
+        }
+
+        .nav a {
+            /* 高度和行高相等实现文字的垂直居中 */
+            height: 40px;
+            line-height: 40px;
+            color: #333;
+            padding: 0 15px;
+        }
+        a:hover {
+            color: orange
+        }
+
+        
+    </style>
+
+</head>
+
+<body>
+
+    <!-- 
+        1. 结构分析
+            1. 最外层是通栏
+            2. 通栏里面是版心
+            3. 版心里面是两个 div 一个左浮动 一个右浮动
+            4. 左浮动的 div 里面 有 3个 导航栏 右浮动的 div 里面有 5个 a 
+     -->
+    <div class="nav">
+        <div class="wrap">
+            <div class="left">
+                <ul>
+                    <li><a href="#">设为首页</a></li>
+                    <li><a href="#">手机新浪网</a></li>
+                    <li><a href="#">移动客户端</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">登录</a></li>
+                    <li><a href="#">微博</a></li>
+                    <li><a href="#">博客</a></li>
+                    <li><a href="#">邮箱</a></li>
+                    <li><a href="#">网站导航</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

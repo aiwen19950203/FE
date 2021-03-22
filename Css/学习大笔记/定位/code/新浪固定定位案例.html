@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav,
+    .left,
+    .right {
+        position: fixed;
+
+    }
+
+    .wrapper {
+        padding-top: 44px;
+        /* 水平居中 */
+        width: 1002px;
+        margin: 0 auto;
+        
+    }
+    .left {
+        top: 200px;
+        left: 0;
+    }
+    .right {
+        top: 200px;
+        right: 0;
+    }
+</style>
+
+<body>
+    <!-- 写代码不要有畏难的情绪在里面 不会写就 先分析结构 
+        一点一点注释写
+        首先是最上面的 导航 因为不随着浏览器的滚动而滚动所以使用的是固定定位 就是不知道为什么要使用背景图片的形式 固定定位不能设置宽高吗
+        中间这个版心 wraper 插入图片就行了
+        左右两个广告的位置也是随着浏览器滚动而滚动的所以也使用固定定位的
+    
+    -->
+    <div class="nav">
+        <img src="./images/top.png" alt="">
+    </div>
+    <div class="wrapper">
+        <img src="./images/box.png" alt="">
+    </div>
+    <div class="left">
+        <img src="./images/ad-l.png" alt="">
+    </div>
+    <div class="right">
+        <img src="./images/ad-r.png" alt="">
+    </div>
+</body>
+
+</html>

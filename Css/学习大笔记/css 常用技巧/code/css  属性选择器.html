@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 给 有  href 属性的 a 标签设置下面的样式 */
+        a[href] {
+            font-size: 50px;
+            color: orangered;
+        }
+
+        /* 给 有 class 属性的 div 盒子 设置 下面的样式 */
+        /* div[class] {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+        } */
+
+        /* 让属性名为 box1 的标签有如下样式 */
+        [class='box1'] {
+            display: block;
+            /* width: 200px;
+            height: 200px; */
+            /* background-color: #f00; */
+
+        }
+
+        /* 让 type 属性 为 text 的元素 有如下样式 */
+        [type='text'] {
+            height: 40px;
+            line-height: 40px;
+            color: #333;
+            background-color: #f00;
+        }
+
+        /*  */
+
+        [class^='b'] {
+            display: block;
+            width: 400px;
+            height: 400px;
+            border: 1px solid #222;
+            background-color: orange;
+        }
+
+
+        [class$='x'] {
+            width: 404px;
+            height: 800px;
+            background-color: #00f;
+        }
+
+        [class*="b"]{
+            width: 600px;
+            height: 800px;
+            background-color: orange;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <a href="hha">属性选择器</a>
+    <a href="12">有href属性样式就生效</a>
+    <div class="box"></div>
+    <div class="box1"></div>
+    <span class="box1"></span>
+    <input type="text" value="hah" />
+
+
+
+
+</body>
+
+</html>

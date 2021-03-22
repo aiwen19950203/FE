@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red,.green,.footer {
+            width: 100px;
+            height: 100px;
+
+        }
+        .red {
+            background-color: #f00;
+            position: fixed;
+            /* 固定定位的元素会脱离标准流 所以绿色的盒子会在漂浮在红色盒子的下面 */
+            /* 仔细看一下 的话 固定定位的元素会紧贴浏览器 标准流的元素会与浏览器有个默认的padding 和 margin */
+            top: 0;
+            right: 0;
+
+        }
+        .green {
+            background-color: #0f0;
+        }
+        .footer {
+            width: 600px;
+            height: 400px;
+            background-color: #00f;
+            /* 固定定位的元素可以设置宽和高了，如果不设置宽和高也不默认父元素的宽和高 */
+            position: fixed;
+            /* text-align: center; */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="red"></div>
+    <div class="green"></div>
+    <span class="footer">
+    使用固定定位的元素也具备了行内块的特性，可以设置宽和高了。
+    如果不设置宽和高宽和高是由内容撑开的，而不是默认父元素的宽和高
+    </span>
+</body>
+</html>

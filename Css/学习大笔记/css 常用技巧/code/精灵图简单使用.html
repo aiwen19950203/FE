@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box,.box1 {
+    /* 因为背景图片不能撑开盒子得我宽和高 所以需要给盒子设置宽高 盒子的宽高为背景图片的宽和高 */
+
+    /* 之后取 测量的 负值 */
+    width: 24px;
+    height: 21px;
+    background: url(./images/tb.png) no-repeat;
+    border: 1px solid #222;
+    /* padding: 4px; */
+    /* box-sizing: border-box; */
+    background-position: 0 -90px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+        
+    }
+
+    .box1 {
+        height: 26px;
+        background-position: 0 -173px;
+    }
+</style>
+
+<body>
+    <div class="box">
+
+    </div>
+    <div class="box1"></div>
+
+</body>
+
+</html>

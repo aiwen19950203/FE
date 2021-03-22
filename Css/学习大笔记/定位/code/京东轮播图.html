@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .banner {
+            width: 590px;
+            height: 470px;
+            position: relative;
+            margin: 50px auto;
+        }
+
+        a {
+            text-decoration: none;
+            display: block;
+
+
+        }
+
+        .arrow_l,
+        .arrow_r {
+            /* 有父元素 所以需要在外边 加一个盒子-- */
+            position: absolute;
+            width: 20px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, .3);
+            top: 50%;
+            margin-top: -20px;
+            /* left: 0; */
+
+        }
+
+        .arrow_r {
+            right: 0;
+        }
+
+        .circle {
+            width: 200px;
+            height: 30px;
+            /* background-color: pink; */
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            margin-left: -100px;
+            text-align: center;
+
+        }
+
+        /* 小原点 可以用 border-radius 属性实现 */
+        /* i 是行内元素 所以 需要转为行内块元素 */
+        .circle i {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 1px solid #fff;
+
+            margin: 10px 3px 0;
+
+        }
+
+        .circle i:hover {
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <!-- 一个图片 图片的 中间的左右分别有两个小箭头 -->
+        <a href="#">
+            <!-- 中间的图片 -->
+            <img src="./images/jd.jpg" alt="">
+            <!-- 左右箭头 -->
+            <div class="arrow_l">
+                &lt;
+            </div>
+            <div class="arrow_r">
+                &gt;
+            </div>
+            <div class="circle">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+        </a>
+    </div>
+</body>
+
+</html>

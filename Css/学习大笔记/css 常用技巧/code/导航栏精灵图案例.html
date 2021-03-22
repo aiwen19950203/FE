@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导航栏精灵图</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        /* 结构样式 */
+
+        .nav {
+            height: 40px;
+            background-color: #222;
+
+        }
+        .w {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        ul {
+            margin-top: 40px;
+            /* position: relative; */
+        }
+
+        li {
+            float: left;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        li:nth-child(1), .nav li:hover {
+            background-color: rgb(13, 81,134);
+        }
+
+        a {
+            color: #fff;
+        }
+
+
+        .new,.hot {
+            width: 26px;
+            height: 19px;
+            background: url(./images/sprite.png) no-repeat;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: -10px;
+
+
+
+        }
+
+        .new {
+            background-position: -58px 0;
+
+        }
+        .hot {
+            background-position: -136px 0;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <!-- 一个 nav  包着一个 版心 >ul > li > a -->
+    <div class="nav">
+        <div class="w">
+            <ul>
+             
+                <li>
+                    <a href="#"> 首页</a>
+                </li>
+                <li>
+                    <a href="#"> Java</a>
+                </li>
+                <li>
+                    <a href="#"> iOS</a>
+                </li>
+                <li>
+                    <a href="#"> UI设计</a>
+                </li>
+                <li>
+                    <a href="#"> 前端与移动开发</a>
+                    <div class="new"></div>
+                </li>
+                <li>
+                    <a href="#"> PHP</a>
+                </li>
+                <li>
+                    <a href="#">  C/C++</a>
+                </li>
+                <li>
+                    <a href="#">  python</a>
+                    <div class="hot"></div>
+                </li>
+                <li>
+                    <a href="#"> 网络营销</a>
+                </li>
+                <li>
+                    <a href="#">  问答专区</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>

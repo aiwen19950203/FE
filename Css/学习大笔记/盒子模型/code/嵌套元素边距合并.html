@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 外层容器 */
+        .box {
+            width: 600px;
+            height: 400px;
+            background-color: #ccc;
+            margin-top: 20px;
+            padding-top: 1px;
+
+            /* 这种情况导致了上面盒子距离浏览器顶部的距离为60px而子盒子距离父盒子之间的距离为0为了解决边距问题可以使用以上两种方案解决  */
+            /*padding-top: 1px;*/
+            /* overflow: hidden; */
+            /* border-top: 1px solid transparent; */
+
+
+        }
+        .son {
+            width: 100px;
+            height: 100px;
+            background-color: #f00;
+            margin-top: 60px;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        <div class="son"></div>
+
+    </div>
+</body>
+
+</html>

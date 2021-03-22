@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button {
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background-color: #ccc;
+      
+            margin: 30px auto;
+            
+            position: relative;
+
+        }
+        .button a {
+
+            color: #666;
+            text-decoration: none;
+        }
+
+        .box {
+            
+            width: 300px;
+            height: 300px;
+            border: 1px solid #000;
+            /* position: absolute; */
+            position: relative;
+            /* top: 0; */
+            left: -110px;
+            /* display: none; */
+
+
+        }
+
+        .button a:hover .box {
+            /* display: block; */
+            visibility: hidden;
+        }
+        .footer {
+            width: 1000px;
+            height: 100px;
+            position: absolute;
+            /* margin: 0 auto; */
+            background-color: #f00;
+            /* top: -500; */
+            /* 在 open with livesive 中 调试 竟然可以同步到 vscode 中 */
+            left: -460px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="button">
+        <a href="#">登录
+            <div class="box"></div>
+        </a>
+        <div class="footer"></div>
+      
+    </div>
+
+</body>
+</html>

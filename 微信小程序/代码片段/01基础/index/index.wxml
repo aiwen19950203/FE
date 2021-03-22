@@ -1,0 +1,15 @@
+<view class="intro">测试数据双向绑定</view>
+
+<!--
+    中心经度 longitude 
+    中心纬度 latitude 
+    添加标记 bindmarkertap
+    地图的宽高可以通过 map 的宽高进行设置 
+
+ -->
+
+    <map name=""></map>
+
+
+
+
